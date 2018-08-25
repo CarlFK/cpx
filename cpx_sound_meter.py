@@ -38,7 +38,7 @@ pixels = neopixel.NeoPixel(board.NEOPIXEL, NUM_PIXELS, brightness=0.1, auto_writ
 pixels.fill(0)
 pixels.show()
 
-mic = audiobusio.PDMIn(board.MICROPHONE_CLOCK, board.MICROPHONE_DATA, frequency=16000, bit_depth=16)
+mic = audiobusio.PDMIn(board.MICROPHONE_CLOCK, board.MICROPHONE_DATA, sample_rate=16000, bit_depth=16)
 samples = array.array('H', [0] * NUM_SAMPLES)
 mic.record(samples, len(samples))
 input_floor = normalized_rms(samples) + 10
