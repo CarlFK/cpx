@@ -6,16 +6,18 @@
 
 set -ex
 
-cp \
-    adafruit-circuitpython-circuitplayground_express-3.0.1.uf2 \
-    /media/carl/CPLAYBOOT$1
-sync
-sleep 10
+target=/media/$USER
 
 cp \
-    ~/src/cpx/readme_cpx.txt \
-    /media/carl/CIRCUITPY/readme.txt
+    adafruit-circuitpython-circuitplayground_express-3.0.1.uf2 \
+    ${target}/CPLAYBOOT$1
+sync
+sleep 15
+
+cp \
+    ~/src/cpx/README.md \
+    ${target}/CIRCUITPY/
 
 cp \
     ~/src/Welcome_to_CircuitPython_CPX/cpx_touch_pixel_rainbow.py \
-    /media/carl/CIRCUITPY/code.py
+    ${target}/CIRCUITPY/code.py
