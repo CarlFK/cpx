@@ -1,6 +1,6 @@
-#Carl's 'custom' circuitpython-circuitplayground_express
+# Carl's 'custom' circuitpython-circuitplayground_express
 
-It isn't that custom - it has the following 3 files put on it:
+It isn't that custom. I put the following 3 files put on it:
 
 * adafruit-circuitpython-circuitplayground_express-3.0.0.uf2
 * cpx_touch_pixel_rainbow.py
@@ -8,7 +8,7 @@ It isn't that custom - it has the following 3 files put on it:
 
 ## The files came from here:
 * https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython
-* https://github.com/adafruit/circuitpython/releases/download/3.0.1/adafruit-circuitpython-circuitplayground_express-3.0.1.uf2
+* https://github.com/adafruit/circuitpython/releases/download/3.0.1/
 * https://github.com/kattni/Welcome_to_CircuitPython_CPX
 * https://github.com/CarlFK/cpx
 
