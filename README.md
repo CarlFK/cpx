@@ -7,8 +7,7 @@ It isn't that custom. I put the following 3 files put on it:
 * README.md
 
 ## The files came from here:
-* https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython
-* https://github.com/adafruit/circuitpython/releases/download/3.0.1/
+* https://github.com/adafruit/circuitpython/releases (3.0.3)
 * https://github.com/kattni/Welcome_to_CircuitPython_CPX
 * https://github.com/CarlFK/cpx
 

@@ -7,15 +7,22 @@
 set -ex
 
 target=/media/$USER
+assets=~/sbc/cpx
+
+echo Plug it in, hit the reset once or twice till all the leds are green.
+
+while [ ! -d ${target}/CIRCUITPY ]; do
+    sleep 1
+done
 
 cp \
-    adafruit-circuitpython-circuitplayground_express-3.0.1.uf2 \
-    ${target}/CPLAYBOOT$1
+    ${assets}/adafruit-circuitpython-circuitplayground_express-3.0.3.uf2 \
+    ${target}/CPLAYBOOT
 sync
 sleep 15
 
 cp \
-    ~/src/cpx/README.md \
+    README.md \
     ${target}/CIRCUITPY/
 
 cp \
