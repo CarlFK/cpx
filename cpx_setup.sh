@@ -11,7 +11,7 @@ assets=~/sbc/cpx
 
 echo Plug it in, hit the reset once or twice till all the leds are green.
 
-while [ ! -d ${target}/CIRCUITPY ]; do
+while [ ! -d ${target}/CPLAYBOOT ]; do
     sleep 1
 done
 
