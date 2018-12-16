@@ -28,5 +28,12 @@ sleep 15
 
 cp README.md ${target}/CIRCUITPY/
 
-cp ~/src/Welcome_to_CircuitPython_CPX/cpx_touch_pixel_rainbow.py \
-    ${target}/CIRCUITPY/code.py
+cp workshop_starter.py ${target}/CIRCUITPY/code.py
+cp ~/src/PS1_2018/??_cpx_*.py ${target}/CIRCUITPY/
+cp ~/src/PS1_2018/README.md ${target}/CIRCUITPY/
+cp ~/src/PS1_2018/LICENSE ${target}/CIRCUITPY/
+
+sync
+pumount /dev/sdc1
+eject /dev/sdc
+
