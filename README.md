@@ -29,6 +29,7 @@ Edit code.py, hit save and see what happens!
 * https://learn.adafruit.com/welcome-to-circuitpython
 * https://circuitpython.readthedocs.io/en/latest/
 * http://youtu.be/RhgKRp3oo5o Kattni Rembor's CircuitPython Workshop
+NB: cpx_touch_pixel_rainbow.py is not setup on the workshop build, the tutorial teaches you how to do that and more.
 
 ## If you want a nice IDE (Integrated Development Environment), start here:
 * https://learn.adafruit.com/welcome-to-circuitpython/installing-mu-editor
