@@ -24,6 +24,9 @@ The board reboots every time you write to it.
 Edit code.py, hit save and see what happens!
 ```
 
+## Adafruit CircuitPlayground Library Documentation
+* https://circuitpython.readthedocs.io/projects/circuitplayground/en/latest/api.html
+
 ## More handy URLs
 * https://www.adafruit.com/product/3333
 * https://learn.adafruit.com/welcome-to-circuitpython
