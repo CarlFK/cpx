@@ -6,12 +6,12 @@ It isn't that custom. The flashing instrucitons are from:
 
 With the following 3 files:
 
-* adafruit-circuitpython-circuitplayground_express-3.1.2.uf2
+* adafruit-circuitpython-circuitplayground_express-en_US-4.1.0-rc.1.uf2
 * cpx_touch_pixel_rainbow.py
 * README.md
 
 ## The files came from here:
-* https://github.com/adafruit/circuitpython/releases/download/3.1.2/
+* https://github.com/adafruit/circuitpython/
 * https://github.com/kattni/Welcome_to_CircuitPython_CPX
 * https://github.com/CarlFK/cpx
 

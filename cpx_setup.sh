@@ -9,8 +9,8 @@ set -ex
 target=/media/$USER
 assets=~/sbc/cpx
 
-cpver=3.1.2
-img=adafruit-circuitpython-circuitplayground_express-${cpver}.uf2
+cpver=4.1.0-rc.1
+img=adafruit-circuitpython-circuitplayground_express-en_US-${cpver}.uf2
 
 if [ ! -f ${assets}/${img} ]; then
   wget -N --directory-prefix ${assets}  \
