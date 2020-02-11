@@ -4,13 +4,16 @@
 # sets up a circuitplayground_expres board with:
 # circuitpython, a readme and nifty code.py
 
+# usage:  ./cpx_setup.sh [version]
+# example: ./cpx_setup.sh 5.0.0-beta.5
+
 set -ex
+
+cp_ver=${1:-4.1.2}
 
 target=/media/$USER
 assets=~/sbc/cpx
 
-cp_ver=5.0.0-beta.5
-# cp_ver=4.1.2
 img=adafruit-circuitpython-circuitplayground_express-en_US-${cp_ver}.uf2
 
 if [ ! -f ${assets}/${img} ]; then
@@ -30,8 +33,11 @@ while [ ! -d ${target}/CPLAYBOOT ]; do
 done
 
 cp ${assets}/${img} ${target}/CPLAYBOOT
+echo waiting for OS to mount ${target}/CIRCUITPY/
 sync
-sleep 5 # wait for os to see CIRCUITPY drive
+while [ ! -d ${target}/CIRCUITPY/ ]; do
+  sleep 2
+done
 
 # rm ${target}/CIRCUITPY/* -rf
 
