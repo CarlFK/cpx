@@ -9,12 +9,13 @@ set -ex
 target=/media/$USER
 assets=~/sbc/cpx
 
-cpver=4.1.0-rc.1
-img=adafruit-circuitpython-circuitplayground_express-en_US-${cpver}.uf2
+cp_ver=5.0.0-beta.5
+# cp_ver=4.1.2
+img=adafruit-circuitpython-circuitplayground_express-en_US-${cp_ver}.uf2
 
 if [ ! -f ${assets}/${img} ]; then
   wget -N --directory-prefix ${assets}  \
-    https://github.com/adafruit/circuitpython/releases/download/${cpver}/${img}
+    https://github.com/adafruit/circuitpython/releases/download/${cp_ver}/${img}
 fi
 
 if [ ! -d ${assets}/Welcome_to_CircuitPython_CPX ]; then
@@ -30,9 +31,9 @@ done
 
 cp ${assets}/${img} ${target}/CPLAYBOOT
 sync
-sleep 15
+sleep 5 # wait for os to see CIRCUITPY drive
 
-rm ${target}/CIRCUITPY/* -rf
+# rm ${target}/CIRCUITPY/* -rf
 
 cp \
     README.md \
