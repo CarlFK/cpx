@@ -49,7 +49,8 @@ cp \
     ~/src/Welcome_to_CircuitPython_CPX/cpx_touch_pixel_rainbow.py \
     ${target}/CIRCUITPY/code.py
 
-cp -a \
+rm -rf /${target}/CIRCUITPY/Welcome_to_CircuitPython_CPX
+rsync -rtvP --cvs-exclude \
     ${assets}/Welcome_to_CircuitPython_CPX \
     ${target}/CIRCUITPY/
 
