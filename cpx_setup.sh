@@ -4,21 +4,22 @@
 # sets up a circuitplayground_expres board with:
 # circuitpython, a readme and nifty code.py
 
-# usage:  ./cpx_setup.sh [version]
-# example: ./cpx_setup.sh 5.0.0-beta.5
+# example: ./cpx_setup.sh 6.0.0-alpha.3
 
 set -ex
 
-cp_ver=${1:-4.1.2}
+cp_ver=${1:-5.3.1}
 
 target=/media/$USER
 assets=~/sbc/cpx
+
+dl_root=https://downloads.circuitpython.org/bin/circuitplayground_express/en_US
 
 img=adafruit-circuitpython-circuitplayground_express-en_US-${cp_ver}.uf2
 
 if [ ! -f ${assets}/${img} ]; then
   wget -N --directory-prefix ${assets}  \
-    https://github.com/adafruit/circuitpython/releases/download/${cp_ver}/${img}
+    ${dl_root}/${img}
 fi
 
 if [ ! -d ${assets}/Welcome_to_CircuitPython_CPX ]; then
