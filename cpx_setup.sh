@@ -8,7 +8,7 @@
 
 set -ex
 
-cp_ver=${1:-5.3.1}
+cp_ver=${1:-8.2.0}
 
 target=/media/$USER
 assets=~/sbc/cpx
@@ -56,5 +56,8 @@ rsync -rtvP --cvs-exclude \
     ${target}/CIRCUITPY/
 
 sync
-pumount /dev/sdc1
-eject /dev/sdc
+
+dev=$(findfs LABEL=CIRCUITPY)
+pumount ${target}/CIRCUITPY/
+eject ${dev}
+
