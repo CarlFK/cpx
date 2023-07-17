@@ -1,13 +1,17 @@
-﻿The setup is optimized for answering questions like "What is programming?" or "Can you teach me Python?"
+# Point
+ The setup is optimized for answering questions like "What is programming?" or "Can you teach me Python?"
 
+## Sikp the Boring Stuff 
 Using Circuit Python on the CPX lets us skip the boring stuff: "How much do you know already?" then spending 30+ min installing Python and talking about OS paths and dependency management and best practices like version control of your countless (one) project directory and all the other boring stuff.
 
 Skip over all that and go right to something engaging: Blinking lights.
 
+## Fun Stuff
 Hook the CPX to a usb battery, hand it to the person who will inadvertently touch the touch pads lighting up the LED it grabs their attention and they want to know what is going on and how.
 
 Point at the micro controller chip, “This is running a Python program.  Let’s look at it.”  Unplug from the battery and plug into a laptop, get into the file manager, right click code.py, Edit.
 
+## Teaching
 Explain this code:
 ```
 import time
